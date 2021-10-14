@@ -7,7 +7,7 @@ contract NFT is ERC1155 {
     
     constructor() ERC1155('ipfs://CHANGERPARVOTRECIDDESFICHIERSJSON/{id}.json') {
         for(uint  i = 0 ; i < 30 ; i++) {
-           _mint(msg.sender, i, i, bytes(abi.encodePacked("Evil Smiley number #", Strings.toString(i)))); 
+           _mint(msg.sender, i, 1, bytes(abi.encodePacked("Evil Smiley number #", Strings.toString(i)))); 
         }
     }
     
